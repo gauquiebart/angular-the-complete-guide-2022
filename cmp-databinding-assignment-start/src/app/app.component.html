@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+        <app-game-control
+            (numberCreated)="onNumberCreated($event)">
+        </app-game-control>
+        <div *ngFor="let number of numbers">
+            <app-even [evenNumber]="number" *ngIf="number % 2 === 0"></app-even>
+            <app-odd [oddNumber]="number" *ngIf="number % 2 !== 0"></app-odd>
+        </div>
+    </div>
+  </div>
+</div>

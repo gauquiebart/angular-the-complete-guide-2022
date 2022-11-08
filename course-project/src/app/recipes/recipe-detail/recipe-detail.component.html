@@ -13,9 +13,9 @@
         <div class="dropdown">
             <button type="button" appDropdown class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true">Manage Recipe <span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li class="dropdown-item"><a href="#" (click)="onAddIngredientsToShoppingList()">To Shopping List</a></li>
-                <li class="dropdown-item"><a href="#">Edit Recipe</a></li>
-                <li class="dropdown-item"><a href="#">Delete Recipe</a></li>
+                <li class="dropdown-item"><a style="cursor:pointer" (click)="onAddIngredientsToShoppingList()">To Shopping List</a></li>
+                <li class="dropdown-item"><a style="cursor:pointer" [routerLink]="['edit']">Edit Recipe</a></li>
+                <li class="dropdown-item"><a style="cursor:pointer">Delete Recipe</a></li>
             </ul>
         </div>
     </div>

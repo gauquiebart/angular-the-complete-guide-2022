@@ -10,6 +10,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "strict": true,
+    "noImplicitAny": true,
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",

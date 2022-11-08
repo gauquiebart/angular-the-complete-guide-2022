@@ -1,6 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Recipe} from "../recipe.model";
 import {RecipeService} from "../recipe.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
     selector: 'app-recipe-list',
@@ -18,7 +19,4 @@ export class RecipeListComponent implements OnInit {
         this.recipes = this.recipeService.getRecipes();
     }
 
-    onRecipeSelected(recipe: Recipe) {
-        this.recipeService.recipeSelected.emit(recipe);
-    }
 }

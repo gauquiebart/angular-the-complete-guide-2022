@@ -1,0 +1,7 @@
+/standalone-start/node_modules/
+/standalone-start/.angular/
+/standalone-start/.idea/
+/standalone-routing/node_modules/
+/standalone-routing/.idea/
+/standalone-routing/.angular/
+

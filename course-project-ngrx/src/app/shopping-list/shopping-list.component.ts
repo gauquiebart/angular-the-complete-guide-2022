@@ -3,6 +3,7 @@ import {Observable} from "rxjs";
 import {Store} from "@ngrx/store";
 
 import * as fromShoppingList from './store/shopping-list.reducer';
+import * as fromApp from '../store/app.reducer';
 import * as ShoppingListActions from './store/shopping-list.actions';
 
 @Component({
@@ -14,7 +15,7 @@ export class ShoppingListComponent {
 
     ingredients$: Observable<fromShoppingList.State>;
 
-    constructor(private store: Store<fromShoppingList.AppState>) {
+    constructor(private store: Store<fromApp.AppState>) {
         this.ingredients$ = this.store.select('shoppingList');
     }
 

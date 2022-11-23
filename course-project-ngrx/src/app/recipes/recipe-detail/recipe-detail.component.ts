@@ -19,7 +19,7 @@ export class RecipeDetailComponent implements OnInit {
     constructor(private recipeService: RecipeService,
                 private route: ActivatedRoute,
                 private router: Router,
-                private store: Store<fromShoppingList.AppState>) {
+                private store: Store<fromShoppingList.State>) {
     }
 
     ngOnInit(): void {
